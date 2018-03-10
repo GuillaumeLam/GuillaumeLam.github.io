@@ -1,9 +1,9 @@
-baseURL = "http://example.org/"
+baseURL = "http://guillaumelam.me/"
 languageCode = "en-us"
 title = "Guillaume Lam Portfolio"
 theme = "hugo-icon"
 
-publishDir = "../docs"
+publishDir = "docs"
 
 # Metadata
 [params]
