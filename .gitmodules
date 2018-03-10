@@ -1,0 +1,3 @@
+[submodule "guillaumelam/hugo-icon"]
+	path = guillaumelam/hugo-icon
+	url = https://github.com/SteveLane/hugo-icon.git
