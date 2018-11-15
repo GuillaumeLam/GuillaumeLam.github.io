@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://guillaumelam.me/categories/</loc>
+    <loc>http://guillaumelam.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://guillaumelam.me/</loc>
+    <loc>http://guillaumelam.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://guillaumelam.me/tags/</loc>
+    <loc>http://guillaumelam.com/tags/</loc>
     <priority>0</priority>
   </url>
   
