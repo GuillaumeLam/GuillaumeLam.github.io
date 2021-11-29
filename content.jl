@@ -125,12 +125,16 @@ page(
     ]
 )
 
-# page(
-#     title="publications",
-#     sections=[
-#         Section(
-#             title="Publications",
-#             items=Publications("publications.bib")
-#         )
-#     ]
-# )
+#########
+# publications.html
+#########
+
+page(
+    title="publications",
+    sections=[
+        Section(
+            title="Publications",
+            items=Publications("publications.bib")
+        )
+    ]
+)
