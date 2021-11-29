@@ -1,0 +1,9 @@
+when building website:
+1. get projects from github
+   -if there is a branch called demo with a demo folder, use that to build block on website with
+    html pages to a webpage demo or smth
+   -if there is a branch called gh-pages, add as path for documentation which can be linked to on
+    the github project
+
+TODO:
+-find creative way to make page for plants

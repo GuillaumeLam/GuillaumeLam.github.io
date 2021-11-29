@@ -32,7 +32,7 @@ biography = Block(
     Welcome sentient being,
     """,
     """
-    I have come to realize that I love building, making and growing. It almost doesn't matter what. Software, hardware, music, plants, or moments. I have always loved making and always will. This was not always clear to me, however. It is a deceptively difficult task which requires small but frequent effort. The payoff is usually worth it, but I think the journey should also be appreciated as it is part of the process and allows for us to grow from our makings.
+    I have come to realize that I love building, making and growing. It almost doesn't matter what. Software, hardware, art, plants, or moments. I have always loved making and always will. This was not always clear to me, however. It is a deceptively difficult task which requires small but frequent effort. The payoff is usually worth it, but I think the journey should also be appreciated as it is part of the process and allows for us to grow from our makings.
     """,
     """
     I doubt that this is unique to me. Humans have been fascinated by our own creations, and the ones of nature for a while; buildings and mountains. I think it captures our imagination as it beckons something that will outlast us. Yet it requires a "feeble" and time bound human to maintain it in the moments from now till then. Creating, at least for me, is a strenuous act. I think this might detract certain from persisting and pushing through the difficult parts. I urge you to keep going.
@@ -126,11 +126,107 @@ page(
 )
 
 #########
+# research.html
+#########
+
+topics = Block(
+    paragraphs(
+        """
+        INSERT TEXT ABT RESEARCH TOPICS I AM INTERESTED BY
+        """
+    ),
+    images()
+)
+
+topic1 = Block(
+    paragraphs(
+        """
+        INSERT INFO ABT TOPIC 1 HERE
+        """
+    ),
+    images()
+)
+
+page(
+    title="research",
+    sections=[
+        Section(
+            title="Research Topics",
+            items=topics
+        ),
+        Section(
+            title="Topic 1",
+            items=topic1
+        )
+    ]
+)
+
+#########
+# software.html: github (GitRepo)
+#########
+
+github = GitRepo(
+    "GuillaumeLam/LiquidStateMachine.jl",
+    "GuillaumeLam/HebbLSMRL"
+)
+
+page(
+    title="software",
+    background=bg_white,
+    sections=[
+        Section(
+            title="Software",
+            items=github
+        )
+    ]
+)
+
+#########
+# projects.html
+# place to log various assorted projects
+# like wireless lamp, hydroponic, cejep miniature balista
+# if a project has certain amount of info -> make into page
+#########
+
+projects = Block(
+    paragraphs(
+        """
+        INSERT TEXT ABT PROJECTS
+        """
+    ),
+    images()
+)
+
+project1 = Block(
+    paragraphs(
+        """
+        INSERT INFO ABT PROJECT 1
+        """
+    ),
+    images()
+)
+
+page(
+    title="projects",
+    sections=[
+        Section(
+            title="Projects",
+            items=topics
+        ),
+        Section(
+            title="Project 1",
+            items=topic1
+        )
+    ]
+)
+
+#########
 # publications.html
 #########
 
 page(
     title="publications",
+    background=bg_white,
     sections=[
         Section(
             title="Publications",
@@ -138,3 +234,7 @@ page(
         )
     ]
 )
+
+#########
+# page for productivity? gotta be productive if you want to build things
+#########
