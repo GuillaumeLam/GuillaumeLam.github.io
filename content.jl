@@ -29,7 +29,9 @@ info["github"] = "https://github.com/GuillaumeLam"
 biography = Block(
     paragraphs(
     """
+    ++++
     Site is under construction
+    ++++
     """
     ),
     images()
