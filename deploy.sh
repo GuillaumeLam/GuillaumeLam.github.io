@@ -1,2 +1,2 @@
 julia run.jl
-git subtree push --prefix site origin gh-pages
+git push origin `git subtree split --prefix site origin gh-pages`:gh-pages --force
