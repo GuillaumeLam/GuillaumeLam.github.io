@@ -251,11 +251,11 @@ page(
     sections=[
         Section(
             title="Projects",
-            items=topics
+            items=projects
         ),
         Section(
             title="Project 1",
-            items=topic1
+            items=project1
         )
     ]
 )

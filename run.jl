@@ -1,3 +1,7 @@
+using Pkg
+Pkg.activate(".")
+Pkg.instantiate()
+
 import StaticWebPages
 import StaticWebPages: local_info
 
