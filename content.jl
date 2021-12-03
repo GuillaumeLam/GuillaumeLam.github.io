@@ -31,9 +31,7 @@ biography = Block(
     """
     ++++
     ====
-    ----
     Site is under construction
-    ----
     ====
     ++++
     """
