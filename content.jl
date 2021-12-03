@@ -30,7 +30,9 @@ biography = Block(
     paragraphs(
     """
     ++++
+    ====
     Site is under construction
+    ====
     ++++
     """
     ),
