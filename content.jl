@@ -32,7 +32,7 @@ short_bio = Block(
     I am a Research Intern at $(link("MILA", "https://mila.quebec/en/")) supervised by $(link("Irina Rish", "https://sites.google.com/site/irinarish/"))
     """,
     """
-    My fundamental interest are in Intelligence (Artificial & Biological) and Consciousness.
+    My fundamental interest are in Intelligence (Artificial & Biological).
     """,
     """
     ++++
