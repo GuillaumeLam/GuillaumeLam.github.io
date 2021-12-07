@@ -46,7 +46,7 @@ short_bio = Block(
 long_bio = Block(
     paragraphs(
     """
-    Welcome intelligent sentient being,
+    Welcome sapient being,
     """,
     """
     I have come to realize that I love building, making and growing. It almost doesn't matter what. Software, hardware, art, or plants. I have always loved making and always will. This was not always clear to me, however. It is a deceptively difficult task which requires small but frequent effort. The payoff is usually worth it, but I think the journey should also be appreciated as it is part of the process and allows for us to grow from our makings.
