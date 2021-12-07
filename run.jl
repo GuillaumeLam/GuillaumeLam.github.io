@@ -10,4 +10,4 @@ local_info["site"] = "./site"
 
 local_info["auth_tokens"] = "."
 
-StaticWebPages.export_site(d=local_info, rm_dir=true, opt_in=true)
+StaticWebPages.export_site(d=local_info, rm_dir=true, opt_in=false)

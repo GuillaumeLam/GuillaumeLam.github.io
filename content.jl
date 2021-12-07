@@ -26,14 +26,43 @@ info["github"] = "https://github.com/GuillaumeLam"
 # honors, awards, and grants
 #########
 
-biography = Block(
+short_bio = Block(
     paragraphs(
     """
+    I am a Research Intern at $(link("MILA", "https://mila.quebec/en/")) supervised by $(link("Irina Rish", "https://sites.google.com/site/irinarish/"))
+    """,
+    """
+    My fundamental interest are in Intelligence (Artificial & Biological) and Consciousness.
+    """,
+    """
     ++++
-    ====
-    Site is under construction
-    ====
+    Site is still under construction. Last updated 2021 Dec 6
     ++++
+    """
+    ),
+    images()
+)
+
+long_bio = Block(
+    paragraphs(
+    """
+    Welcome intelligent sentient being,
+    """,
+    """
+    I have come to realize that I love building, making and growing. It almost doesn't matter what. Software, hardware, art, or plants. I have always loved making and always will. This was not always clear to me, however. It is a deceptively difficult task which requires small but frequent effort. The payoff is usually worth it, but I think the journey should also be appreciated as it is part of the process and allows for us to grow from our makings.
+    """,
+    """
+    I doubt that this is unique to me. For the longest of times, humans have been fascinated by nature's creations and our own; from mount everest to the pyramids. I think it captures our imagination as it beckons something that will outlast us. Yet it requires a "feeble" and time bound human to maintain it in the moments from now till then. Creating, at least for me, is a strenuous act. I think this might detract certain from persisting and pushing through the difficult parts. I urge you to keep going.
+    """,
+    """
+    Noticing that I limited myself by my own mental image of what my creation should be like rather than letting it develop independantly, has allowed growth for me and for my creations to be more them.
+    """,
+    """
+    If it hasn't been illustrated yet, the central theme of this is Construction. So, I leave you with a quote to hopefully give you strength to build something of your own:
+    """,
+    """
+    “A great building must begin with the immeasurable, must go through measurable means when it is being designed, and in the end must be unmeasured.”
+    – Louis Kahn
     """
     ),
     images()
@@ -93,8 +122,8 @@ page(
     title="index",
     sections=[
         Section(
-            title="Biography",
-            items=biography
+            title="Short Biography",
+            items=short_bio
         ),
         Double(
             Section(
@@ -105,6 +134,10 @@ page(
                 title="Education",
                 items=education_cards
             )
+        ),
+        Section(
+            title="Longer Biography",
+            items=long_bio
         ) #,
         # Section(
         #     title="Grants",
@@ -120,8 +153,11 @@ page(
 topics = Block(
     paragraphs(
         """
-        INSERT TEXT ABT RESEARCH TOPICS I AM INTERESTED BY
-        OVERVIEW of research interests
+        My current research centers around the intersection of Neuroscience with Artificial Intelligence. These two fields have benefited from each other and recently the feedback has been even more pronouced.
+        Hopefully, each field will help us gain a better understanding of the other with the potential for mastery(engineering) over both.
+        """,
+        """
+        A few additional research directions I would like to undertake are noted as well. I am sure this is subject to change as all things do.
         """
     ),
     images()
@@ -226,6 +262,21 @@ page(
 )
 
 #########
+# publications.html
+#########
+
+page(
+    title="publications",
+    background=bg_white,
+    sections=[
+        Section(
+            title="Publications",
+            items=Publications("publications.bib")
+        )
+    ]
+)
+
+#########
 # projects.html
 # place to log various assorted projects
 # like wireless lamp, hydroponic, cejep miniature balista
@@ -260,21 +311,6 @@ page(
         Section(
             title="Project 1",
             items=project1
-        )
-    ]
-)
-
-#########
-# publications.html
-#########
-
-page(
-    title="publications",
-    background=bg_white,
-    sections=[
-        Section(
-            title="Publications",
-            items=Publications("publications.bib")
         )
     ]
 )
