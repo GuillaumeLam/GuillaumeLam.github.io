@@ -6,7 +6,7 @@ info["avatar"] = "pic.jpg"
 info["cv"] = "cv.pdf"
 info["lang"] = "en"
 info["name"] = "Guillaume Lam"
-info["email"] = "guillaumeDOTlam@milaDOTquebec"
+info["email"] = "guillaumeDOTlam@ppspDOTteam"
 info["title"] = "G.LAM"
 
 #########
@@ -29,14 +29,26 @@ info["github"] = "https://github.com/GuillaumeLam"
 short_bio = Block(
     paragraphs(
     """
-    I am a Research Intern at $(link("MILA", "https://mila.quebec/en/")) supervised by $(link("Irina Rish", "https://sites.google.com/site/irinarish/"))
+    I am a Ph.D student in the $(link("PPSP Laboratory", "https://ppsp.team")) 
+    and the $(link("NED Laboratory", "https://ned.umontreal.ca/fr")).
     """,
     """
-    My fundamental interest are in Intelligence (Artificial & Biological).
+    My research is supervised by $(link("Guillaume Dumas", "https://www.extrospection.eu")) 
+    and $(link("Sarah Lippé", "https://recherche.chusj.org/en/Axes-de-recherche/Bio?id=f8b3f542-fb84-453d-9d19-52f80859568a")).
+    """,
+    """
+    My doctoral research focuses on the use of $(link("Source Reconstruction", "http://www.scholarpedia.org/article/Source_localization")) for the dissection of neural data captured from EEGs at the electrode level.
+    Essentially, this method estimates the spatial neural sources/locations that give rise to the recorded EEG signals using physical priors.
+    This technique offers the possibility of more robust biomaker detection (eg. E/I ratio, complexity, etc.), spatial genetic enrichment, and bridging the EEG and fMRI literature & tool usage gap.
+    This tool will support further research in the field of neurodevelopmental disorders (a NED laboratory goal) and social interaction understanding (a PPSP laboratory goal).
+    """,
+    """
+    My interests lie at the intersection and mutual benefit between Neuroscience & Psychology and Artificial Intelligence.
+    I am particularly interested in the development of biologically inspired AI models and the use of AI to better understand brains.
     """,
     """
     ++++
-    Site is still under construction. Last updated 2021 Dec 6
+    Site is still under construction. Last updat: 2024 Jan 31st.
     ++++
     """
     ),
@@ -70,10 +82,22 @@ long_bio = Block(
 
 work_cards = Deck(
     Card(
-        "June 2021",
-        "current",
+        "January 2023",
+        "(December 2028)",
+        "Gradute Student Researcher",
+        "PPSP Laboratory & NED Laboratory - CHUSJ - University of Montreal"
+    ),
+    Card(
+        "January 2022",
+        "December 2022",
         "Research Intern",
-        "MILA"
+        "S2M Laboratory - University of Montreal"
+    ),
+    Card(
+        "June 2021",
+        "December 2021",
+        "Research Intern",
+        "Irina Laboratory - MILA - University of Montreal" 
     ),
     Card(
         "May 2019",
@@ -97,8 +121,14 @@ work_cards = Deck(
 
 education_cards = Deck(
     Card(
-        "M.Sc. [WIP]",
-        "202X",
+        "Ph.D",
+        "(2028)",
+        "Ph.D of Psychology, Neuro Cognitive/Computational specialization",
+        "University of Montreal"
+    ),
+    Card(
+        "M.Sc,",
+        "2022",
         "Master of Computer Science, AI specialization",
         "University of Montreal"
     ),
@@ -153,63 +183,84 @@ page(
 topics = Block(
     paragraphs(
         """
-        My current research centers around the intersection of Neuroscience with Artificial Intelligence. These two fields have benefited from each other and recently the feedback has been even more pronouced.
-        Hopefully, each field will help us gain a better understanding of the other with the potential for mastery(engineering) over both.
+        The intersection of Neuroscience & Psychology and Artificial Intelligence is a fascinating and promising field.
+        The general goal is to develop AI systems which 1. Interface better with humans either through psychological understanding or through brain-like architectures 
+        and 2. Supports fundamental research in neuroscience and psychology.
+        Hopefully, each face of the coin will help us gain a better understanding of the other with the potential for mastery(engineering) over both.
         """,
+
         """
-        A few additional research directions I would like to undertake are noted as well. I am sure this is subject to change as all things do.
+        - Source Reconstruction
+            -> EEG research for NDDs & Social Interactions
+            -> [TBD] Generative Models
+        
+        - Liquid State Machines
+            -> Online Continual Learning systems
+            -> [TBD] Scaling
+            -> [TBD] Robotic controller
+        
+        - [TBD] Large Language Models
+            -> RAG systems
+            -> Psychological intervention analysis
+            -> Multi-modal interfacing
+            -> Software Engineering
+
+        - [TBD] Meta-Research
+            -> AI for Research
+            -> LLM for secondbrain analysis
         """
+        # further topics: RL&MARL, ML&Code/SoftEng, Quantum Computing, Consciousness
     ),
     images()
 )
 
-neuroai = Block(
-    paragraphs(
-        """
-        INSERT INFO ABT TOPIC 1 HERE
-        NeuroAI
-        -SNN
-        -CL/LL
-        """
-    ),
-    images()
-)
+# neuroai = Block(
+#     paragraphs(
+#         """
+#         INSERT INFO ABT TOPIC 1 HERE
+#         NeuroAI
+#         -SNN
+#         -CL/LL
+#         """
+#     ),
+#     images()
+# )
 
-rl = Block(
-    paragraphs(
-        """
-        INSERT INFO ABT TOPIC 1 HERE
-        """
-    ),
-    images()
-)
+# rl = Block(
+#     paragraphs(
+#         """
+#         INSERT INFO ABT TOPIC 1 HERE
+#         """
+#     ),
+#     images()
+# )
 
-mlcode = Block(
-    paragraphs(
-        """
-        INSERT INFO ABT TOPIC 1 HERE
-        """
-    ),
-    images()
-)
+# mlcode = Block(
+#     paragraphs(
+#         """
+#         INSERT INFO ABT TOPIC 1 HERE
+#         """
+#     ),
+#     images()
+# )
 
-qc = Block(
-    paragraphs(
-        """
-        INSERT INFO ABT TOPIC 1 HERE
-        """
-    ),
-    images()
-)
+# qc = Block(
+#     paragraphs(
+#         """
+#         INSERT INFO ABT TOPIC 1 HERE
+#         """
+#     ),
+#     images()
+# )
 
-consc = Block(
-    paragraphs(
-        """
-        INSERT INFO ABT TOPIC 1 HERE
-        """
-    ),
-    images()
-)
+# consc = Block(
+#     paragraphs(
+#         """
+#         INSERT INFO ABT TOPIC 1 HERE
+#         """
+#     ),
+#     images()
+# )
 
 page(
     title="research",
@@ -218,26 +269,26 @@ page(
             title="Research Topics",
             items=topics
         ),
-        Section(
-            title="NeuroAI",
-            items=neuroai
-        ),
-        Section(
-            title="RL&MARL",
-            items=rl
-        ),
-        Section(
-            title="ML&Code/SoftEng",
-            items=mlcode
-        ),
-        Section(
-            title="Quantum Computing",
-            items=qc
-        ),
-        Section(
-            title="Consciousness",
-            items=consc
-        )
+        # Section(
+        #     title="NeuroAI",
+        #     items=neuroai
+        # ),
+        # Section(
+        #     title="RL&MARL",
+        #     items=rl
+        # ),
+        # Section(
+        #     title="ML&Code/SoftEng",
+        #     items=mlcode
+        # ),
+        # Section(
+        #     title="Quantum Computing",
+        #     items=qc
+        # ),
+        # Section(
+        #     title="Consciousness",
+        #     items=consc
+        # )
     ]
 )
 
@@ -246,8 +297,12 @@ page(
 #########
 
 github = GitRepo(
+    "GuillaumeLam/NeuroMachines.jl",
+    # "GuillaumeLam/PyS",
     "GuillaumeLam/LiquidStateMachine.jl",
-    "GuillaumeLam/HebbLSMRL"
+    "GuillaumeLam/PaCalC",
+    "GuillaumeLam/HebbLSMRL",
+    "GuillaumeLam/BioSim",
 )
 
 page(
@@ -283,37 +338,37 @@ page(
 # if a project has certain amount of info -> make into page
 #########
 
-projects = Block(
-    paragraphs(
-        """
-        INSERT TEXT ABT PROJECTS
-        """
-    ),
-    images()
-)
+# projects = Block(
+#     paragraphs(
+#         """
+#         INSERT TEXT ABT PROJECTS
+#         """
+#     ),
+#     images()
+# )
 
-project1 = Block(
-    paragraphs(
-        """
-        INSERT INFO ABT PROJECT 1
-        """
-    ),
-    images()
-)
+# project1 = Block(
+#     paragraphs(
+#         """
+#         INSERT INFO ABT PROJECT 1
+#         """
+#     ),
+#     images()
+# )
 
-page(
-    title="projects",
-    sections=[
-        Section(
-            title="Projects",
-            items=projects
-        ),
-        Section(
-            title="Project 1",
-            items=project1
-        )
-    ]
-)
+# page(
+#     title="projects",
+#     sections=[
+#         Section(
+#             title="Projects",
+#             items=projects
+#         ),
+#         Section(
+#             title="Project 1",
+#             items=project1
+#         )
+#     ]
+# )
 
 #########
 # page for productivity? gotta be productive if you want to build things
